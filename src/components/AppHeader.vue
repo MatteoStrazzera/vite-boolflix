@@ -7,6 +7,12 @@ export default {
             state
         }
     },
+    methods: {
+        searchMovie() {
+            console.log('film cercato', this.state.userInput);
+            state.getMovies()
+        }
+    },
     mounted() {
         state.getMovies()
     }
@@ -16,8 +22,8 @@ export default {
 
 <template>
     <div id="site_header">
-        <input type="text" placeholder="inserisci nome del film">
-        <button>cerca</button>
+        <input type="text" v-model="state.userInput" placeholder="inserisci nome del film">
+        <button @click="searchMovie()">cerca</button>
     </div>
 </template>
 

@@ -1,5 +1,5 @@
 <script>
-import { state } from "../state.js"
+import { state } from "../state"
 export default {
     name: "AppHeader",
     data() {
@@ -7,6 +7,9 @@ export default {
             state
         }
     },
+    mounted() {
+        state.getMovies()
+    }
 
 }
 </script>

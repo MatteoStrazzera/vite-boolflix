@@ -20,5 +20,6 @@ export const state = reactive({
                 console.log(err);
                 console.error(err.message);
             })
+        this.userInput = ""
     }
 })

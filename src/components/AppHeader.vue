@@ -22,7 +22,7 @@ export default {
 
 <template>
     <div id="site_header">
-        <input type="text" v-model="state.userInput" placeholder="inserisci nome del film">
+        <input type="text" v-model="state.userInput" @keyup.enter="searchMovie()" placeholder="inserisci nome del film">
         <button @click="searchMovie()">cerca</button>
     </div>
 </template>

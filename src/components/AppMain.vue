@@ -5,7 +5,7 @@ export default {
     data() {
         return {
             state,
-            languages: ['it', 'en', 'de', 'fr', 'sp', 'us']
+            languages: ['it', 'en', 'de', 'fr', 'es', 'us']
         }
     },
     methods: {

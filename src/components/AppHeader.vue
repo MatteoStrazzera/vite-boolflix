@@ -11,12 +11,9 @@ export default {
         searchMovie() {
             console.log('film cercato', this.state.userInput);
             state.getMovies()
+            state.getSeries()
         }
     },
-    mounted() {
-        state.getMovies()
-    }
-
 }
 </script>
 
